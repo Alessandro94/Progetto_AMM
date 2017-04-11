@@ -5,8 +5,11 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
+    
+        <div id="title">
+        NERDBOOK : PROFILO
+        </div>
     <head>
-        <title>Profilo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Alessandro Satta">
@@ -22,7 +25,27 @@ and open the template in the editor.
             </ol>
         </nav>
         
-        <div>
+        <div id="info">
+            <div class="cerca persone"> 
+            <form action="demo_form.asp" method="get">
+            <label for="corto">Cerca </label>
+            <input type="text" name="corto"
+             id="corto" value="" />
+             <br />
+            </div>
+                <p><b>PERSONE</p></b>
+                <p>Jonh j</p>
+                <p>Ayeye B</p>
+                <p>Pino </p>
+                
+                <p><b>GRUPPI</p></b>
+                <p>Serie A</p>
+                <p>Serie B</p>
+                <p>Lega Pro</p>
+            </div>
+        
+        <div id="profilo">
+        <div id="table">
          <form action="demo_form.asp" method="get">
          <label for="corto">Nome </label>
          <input type="text" name="corto"
@@ -66,6 +89,7 @@ and open the template in the editor.
          <input type="password" name="pswd” "
          id="pswd" value="" />
          <br />  
+        </div>
         </div>
     </body>
 </html>
