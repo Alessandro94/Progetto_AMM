@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Nerdbook</title>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alessandro Satta">
+        <meta name="keywords" content="Trova altri nerd">
+        
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    </head>
+
+    <body>
+        <header>
+            <div id="title">
+                Nerdbook
+            </div>
+        </header>
+        <!--Barra di navigazione tra le pagine del sito-->
+        <nav>
+            <ol>
+                <li><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="amici.html">Amici</a></li>
+                <li><a href="cercaamici.html">Cerca aMici</a></li>
+                <li><a href="descrizione.html">Descrizione</a></li>
+                <li class="active"><a href="nuovopost.html">nuovopost</a></li>
+            </ol>
+        </nav>
+
+        <!--Contenuti della pagina-->
+        <div id="divBody">
+            <div id="formNewPost">
+                <form action="servlet.java" method="post">
+                    <div id="postType">
+                        <div>
+                            <label for="textType">Post di Testo</label>
+                            <input type="radio" name="postType" value="textType" id="textType">
+                        </div>
+                        <div>
+                            <label for="imgType">Post con Foto</label>
+                            <input type="radio" name="postType" value="imgType" id="imgType">
+                        </div>
+                    </div>
+                    <div id="postContent">
+                        <div>
+                            <label for="textPost">Testo</label>
+                            <textarea name="textPost" id="textPost"></textarea>
+                        </div>
+                        <div>
+                            <label for="imgPost">File d'immagine</label>
+                            <input type="file" name="imgPost" id="imgPost">
+                        </div>
+                    </div>
+                    <button type="submit">Invia</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
