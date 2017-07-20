@@ -48,7 +48,7 @@ VALUES (default,
         'gang@gmail.com',
         'iverson',
         '123',
-        'img/user1.gif');
+        'img/utente1.jpg');
 
 INSERT INTO utenti (utente_id, name, email, cognome, password, urlfotoprofilo)
 VALUES (default,
@@ -56,7 +56,7 @@ VALUES (default,
         'gang7@gmail.com',
         'carter',
         '123',
-        'img/user2.jpg');
+        'img/utente2.jpg');
 
 
 --Popolamento tabella PostType
